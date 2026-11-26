@@ -87,6 +87,9 @@ function RepairChoice({ repairs }: { repairs: BookingFormProps['repairs'] }) {
       <legend className="mb-1 font-semibold">
         Repairs <span className="font-normal text-ink-soft">(optional)</span>
       </legend>
+            <p className="text-sm text-ink-soft">
+        Not sure which repair you need? You can leave these unchecked and describe your bicycle problem in the note field.
+      </p>
       {repairs.map((repair) => {
         // To show each repair's price too, replace the line under this comment with this line:
         //   const label = repair.name + ', ' + formatPrice(repair.price)
